@@ -1,3 +1,4 @@
 module.exports = (req, res) => {
-  res.json({ message: 'Hello from the serverless function!' });
+    ip = require('ip').address();
+    res.json({ message: 'Hello from ip ' + ip });
 };
